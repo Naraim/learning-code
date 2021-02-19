@@ -1,0 +1,43 @@
+.card{
+
+    border-radius: 8%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 35vh;
+    height: 45vh;
+    align-items: center;
+    padding: 2%;
+    
+    background: linear-gradient(154.9deg, rgba(255, 255, 255, 0.5) 4.56%, rgba(255, 255, 255, 0) 111.72%);
+    box-shadow: inset -2px -2px 10px rgba(18, 0, 0, 0.1), inset 2px 6px 7px rgba(255, 255, 255, 0.23);
+    backdrop-filter: blur(20px);
+    
+    .circle{
+        position: absolute;
+        z-index: -1;
+        width: 20vh;
+        height: 20vh;
+        border-radius: 50%;
+        background: rgba(255, 109, 109, 0.86);
+        backdrop-filter: blur(20px);
+        top: 10%;
+    }
+
+    img{
+        
+        width: 45%;
+        transition: transform .3s ease-out;
+
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+
+    p{
+        padding-top: 20px;
+        font-weight: bold;
+        color: #D65448;
+        font-size: 2em;
+    }
+}
